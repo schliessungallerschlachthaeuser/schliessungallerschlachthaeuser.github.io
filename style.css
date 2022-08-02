@@ -1,0 +1,151 @@
+@font-face {
+    font-family: "Helvetica LT Std Compressed";
+    src: url("fonts/HelveticaLTStd-Comp.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Helvetica LT Std Bold";
+    src: url("fonts/HelveticaLTStd-Bold.otf");
+}
+
+@font-face {
+    font-family: "Helvetica LT Std Roman";
+    src: url("fonts/HelveticaLTStd-Roman.otf");
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    --primary: #d57f1e;
+    --foreground: #ffffff;
+    --background: #000000;
+
+    --title-size: 17vw;
+    --title-mark-size: calc(var(--title-size) / 1.25);
+
+    background: var(--background);
+    padding: 3rem;
+}
+
+div.header-container {
+    width: 100%;
+}
+
+div.date-place-container {}
+
+h1 {
+    font-family: "Helvetica LT Std Compressed", Arial, sans-serif;
+    color: var(--primary);
+    font-size: var(--title-size);
+    font-weight: unset;
+    line-height: 0.9;
+}
+
+h1 > mark {
+    font-size: var(--title-mark-size);
+    font-weight: unset;
+    display: block;
+
+}
+
+mark {
+    background-color: transparent;
+}
+
+mark.foreground {
+    color: var(--foreground);
+}
+
+mark.primary {
+    color: var(--primary);
+}
+
+p {
+    font-family: "Helvetica LT Std Bold", Arial, sans-serif;
+    color: var(--foreground);
+    font-size: 5rem;
+}
+
+p.date {
+    font-size: 7vw;
+    margin-bottom: 0.5vw;
+}
+
+p.place {
+    font-family: "Helvetica LT Std Roman", Arial, sans-serif;
+    font-size: 6vw;
+    margin-top: 0.5vw;
+}
+
+.social-icon > svg {
+    width: 10vw;
+    height: 10vw;
+}
+
+.social-icon-container {
+    display: flex;
+}
+
+div.mission-container {
+    margin-top: 20vw;
+}
+
+p.mission {
+    font-size: 6vw;
+}
+
+
+div.logo-container {
+    display: flex;
+}
+
+.logo {
+    width: 15vw;
+    height: 15vw;
+}
+.push {
+    flex: 1;
+}
+
+.hide-on-mobile {
+    display: none;
+}
+
+/* desktop */
+@media only screen and (min-width: 768px) {
+    .hide-on-desktop {
+        display: none;
+    }
+
+    body {
+        --title-size: 10rem;
+    }
+
+    .logo {
+        width: 10rem;
+        height: 10rem;
+    }
+
+    .date {
+        font-size: 4rem!important;
+    }
+
+    .place {
+        font-size: 3rem!important;
+    }
+
+    .social-icon > svg {
+        width: 6rem!important;
+        height: 6rem!important;
+    }
+
+    p.mission {
+        font-size: 4rem!important;
+    }
+
+    div.mission-container {
+        margin-top: 15rem!important;
+    }
+}
