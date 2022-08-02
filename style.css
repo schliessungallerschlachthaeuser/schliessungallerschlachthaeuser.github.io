@@ -13,6 +13,16 @@
     src: url("fonts/HelveticaLTStd-Roman.otf");
 }
 
+@font-face {
+    font-family: "ITC Garamond Std Bold";
+    src: url("fonts/ITCGaramondStd-Bd.otf");
+}
+
+@font-face {
+    font-family: "ITC Garamond Std Book";
+    src: url("fonts/ITCGaramondStd-Bk.otf");
+}
+
 html {
     font-size: 10px;
 }
@@ -88,12 +98,10 @@ p.place {
     display: flex;
 }
 
-div.mission-container {
-    margin-top: 20vw;
-}
-
-p.mission {
+h3.mission {
+    font-family: "Helvetica LT Std Bold";
     font-size: 6vw;
+    color: var(--foreground);
 }
 
 
@@ -105,18 +113,32 @@ div.logo-container {
     width: 15vw;
     height: 15vw;
 }
-.push {
-    flex: 1;
-}
 
 .hide-on-mobile {
     display: none;
 }
 
+p.text {
+    font-family: "ITC Garamond Std Book", serif;
+    font-size: 8vw;
+}
+
+p.text > strong {
+    font-family: "ITC Garamond Std Bold";
+}
+
+div.text-container > p.text:nth-child(1) {
+    margin-top: 1vw;
+}
+
+div.entry {
+    height: 100vh;
+}
+
 /* desktop */
 @media only screen and (min-width: 768px) {
-    .hide-on-desktop {
-        display: none;
+    body {
+        max-width: 970px;
     }
 
     body {
@@ -141,11 +163,12 @@ div.logo-container {
         height: 6rem!important;
     }
 
-    p.mission {
-        font-size: 4rem!important;
+    h3.mission {
+        font-size: 6rem!important;
     }
 
-    div.mission-container {
-        margin-top: 15rem!important;
+    p.text {
+        font-family: "ITC Garamond Std Book", serif;
+        font-size: 4rem!important;
     }
 }
