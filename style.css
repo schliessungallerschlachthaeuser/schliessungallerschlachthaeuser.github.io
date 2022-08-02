@@ -79,19 +79,19 @@ p {
 }
 
 p.date {
-    font-size: 7vw;
+    font-size: 6.1vw;
     margin-bottom: 0.5vw;
 }
 
 p.place {
     font-family: "Helvetica LT Std Roman", Arial, sans-serif;
-    font-size: 6vw;
+    font-size: 5.5vw;
     margin-top: 0.5vw;
 }
 
 .social-icon > svg {
-    width: 10vw;
-    height: 10vw;
+    width: 7vw;
+    height: 7vw;
 }
 
 .social-icon-container {
@@ -104,6 +104,9 @@ h3.mission {
     color: var(--foreground);
 }
 
+div.social-icon-container > a.social-icon:not(:first-child) {
+    margin-left: 2vw;
+}
 
 div.logo-container {
     display: flex;
@@ -159,8 +162,8 @@ div.entry {
     }
 
     .social-icon > svg {
-        width: 6rem!important;
-        height: 6rem!important;
+        width: 4.5rem!important;
+        height: 4.5rem!important;
     }
 
     h3.mission {
@@ -170,5 +173,9 @@ div.entry {
     p.text {
         font-family: "ITC Garamond Std Book", serif;
         font-size: 4rem!important;
+    }
+
+    div.social-icon-container > a.social-icon:not(:first-child) {
+        margin-left: 1.5rem!important;
     }
 }
