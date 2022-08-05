@@ -101,6 +101,7 @@ p.place {
 
 .social-icon {
     font-family: "Helvetica LT Std Roman", Arial, sans-serif;
+    font-size: 3vw;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,7 +111,7 @@ p.place {
 }
 
 .social-icon > span {
-    margin-top: 01vw;
+    margin-top: 1vw;
 }
 
 .social-icon-container {
@@ -124,7 +125,7 @@ h2.mission {
 }
 
 div.social-icon-container > a.social-icon:not(:first-child) {
-    margin-left: 2vw;
+    margin-left: 3vw;
 }
 
 div.logo-container {
@@ -196,5 +197,13 @@ div.entry {
 
     div.social-icon-container > a.social-icon:not(:first-child) {
         margin-left: 1.5rem!important;
+    }
+
+    .social-icon {
+        font-size: 1.7rem;
+    }
+
+    .social-icon > span {
+        margin-top: 1rem;
     }
 }
