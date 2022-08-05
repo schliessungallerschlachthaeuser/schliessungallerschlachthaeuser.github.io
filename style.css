@@ -99,11 +99,25 @@ p.place {
     height: 7vw;
 }
 
+.social-icon {
+    font-family: "Helvetica LT Std Roman", Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-decoration: none;
+    color: var(--foreground);
+}
+
+.social-icon > span {
+    margin-top: 01vw;
+}
+
 .social-icon-container {
     display: flex;
 }
 
-h3.mission {
+h2.mission {
     font-family: "Helvetica LT Std Bold";
     font-size: 9vw;
     color: var(--foreground);
@@ -171,7 +185,7 @@ div.entry {
         height: 4.5rem!important;
     }
 
-    h3.mission {
+    h2.mission {
         font-size: 6rem!important;
     }
 
