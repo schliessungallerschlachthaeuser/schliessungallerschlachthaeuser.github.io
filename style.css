@@ -1,26 +1,31 @@
 @font-face {
     font-family: "Helvetica LT Std Compressed";
     src: url("fonts/HelveticaLTStd-Comp.woff"), url("fonts/HelveticaLTStd-Comp.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Helvetica LT Std Bold";
     src: url("fonts/HelveticaLTStd-Bold.woff"), url("fonts/HelveticaLTStd-Bold.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "Helvetica LT Std Roman";
     src: url("fonts/HelveticaLTStd-Roman.woff"), url("fonts/HelveticaLTStd-Roman.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "ITC Garamond Std Bold";
     src: url("fonts/ITCGaramondStd-Bd.woff"), url("fonts/ITCGaramondStd-Bd.ttf");
+    font-display: swap;
 }
 
 @font-face {
     font-family: "ITC Garamond Std Book";
     src: url("fonts/ITCGaramondStd-Bk.woff"), url("fonts/ITCGaramondStd-Bk.ttf");
+    font-display: swap;
 }
 
 html {
