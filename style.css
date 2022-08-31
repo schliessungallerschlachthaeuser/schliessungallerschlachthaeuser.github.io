@@ -130,11 +130,17 @@ div.social-icon-container > a.social-icon:not(:first-child) {
 
 div.logo-container {
     display: flex;
+    align-items: center;
 }
 
-.logo {
+.logo-zurich-animal-save {
     width: 15vw;
     height: 15vw;
+}
+
+.logo-animal-save {
+    height: 10vw;
+    margin-left: 3vw;
 }
 
 .hide-on-mobile {
@@ -168,9 +174,14 @@ div.entry {
         --title-size: 10rem;
     }
 
-    .logo {
+    .logo-zurich-animal-save {
         width: 10rem;
         height: 10rem;
+    }
+
+    .logo-animal-save {
+        height: 7rem;
+        margin-left: 1.5rem!important;
     }
 
     .date {
