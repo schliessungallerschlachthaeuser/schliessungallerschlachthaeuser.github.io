@@ -155,7 +155,7 @@ div.text-container > p.text:nth-child(1) {
 }
 
 div.entry {
-    height: 100vh;
+    margin-bottom: 15vw;
 }
 
 /* desktop */
